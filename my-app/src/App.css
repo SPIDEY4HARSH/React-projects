@@ -1,0 +1,138 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Main App Container */
+.AppContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+/* Title */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Refresh Button */
+.refresh {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.refresh h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.btn-white {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: 2px solid #007bff;
+  background-color: white;
+  color: #007bff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+.btn-white:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Tour Cards Container */
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* Individual Tour Card */
+.card > div {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.card > div:hover {
+  transform: scale(1.05);
+}
+
+/* Card Image */
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Price Tag */
+.Amount {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #28a745;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Tour Name */
+.card div:nth-child(3) {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  color: #333;
+}
+
+/* Description */
+.description {
+  padding: 10px;
+  font-size: 1rem;
+  color: #666;
+  text-align: center;
+}
+
+/* Read More Button */
+.readmore {
+  color: #007bff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.readmore:hover {
+  text-decoration: underline;
+}
+
+/* Not Interested Button */
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  background-color: #dc3545;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border-radius: 0 0 10px 10px;
+}
+
+button:hover {
+  background-color: #c82333;
+}
